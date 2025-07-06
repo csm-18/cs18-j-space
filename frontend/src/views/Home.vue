@@ -5,13 +5,17 @@ import Nav from '@/components/Nav.vue'
 import { ref } from 'vue'
 
 let loggedIn = ref(false)
+
+function setLogin(login_bool) {
+  loggedIn.value = login_bool
+}
 </script>
 
 <template>
   <div class="main-con">
     <Nav />
     <Dashboard v-if="loggedIn" class="dashboard" />
-    <Login v-else class="login" />
+    <Login v-else class="login" @login-bool="setLogin" />
   </div>
 </template>
 

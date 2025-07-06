@@ -8,7 +8,7 @@
 h1 {
   text-align: center;
   font-size: 3.5rem;
-  background: #12255b;
+  background: var(--navy-blue);
   padding: 1rem;
 
   .heading {
