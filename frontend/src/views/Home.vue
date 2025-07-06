@@ -1,11 +1,16 @@
-<script setup></script>
+<script setup>
+import Nav from '@/components/Nav.vue'
+</script>
 
 <template>
-  <h1>Just got started!</h1>
+  <div class="main-con">
+    <Nav />
+  </div>
 </template>
 
 <style scoped lang="scss">
-h1 {
-  text-align: center;
+.main-con {
+  display: flex;
+  flex-direction: column;
 }
 </style>

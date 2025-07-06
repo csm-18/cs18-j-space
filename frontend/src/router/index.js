@@ -8,7 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
-      meta: { title: 'J-Space' },
+      meta: { title: 'J-Space - cs18' },
     },
     // {
     //   path: '/about',
